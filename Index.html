@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico Nº4</title>
+</head>
+
+<body>
+    <h1>Trabajo Práctico Nº4: Tablas</h1>
+    <h2>De: Saucedo Leandro</h2>
+    <h3>¿Cuál es la etiqueta principal utilizada para crear una tabla en HTML?</h3>
+    <p>La etiqueta principal para armas tablas es <code>&lt;table&gt;</code>.</p>
+    <h3>¿Qué etiqueta se utiliza para definir una fila en una tabla?</h3>
+    <p>Se usa la etiqueta <code>&lt;tr&gt;</code> para definir una fila.</p>
+    <h3>¿Cuál es la etiqueta utilizada para crear una celda de encabezado en una tabla?</h3>
+    <p>La etiqueta para hacer una celda de encabezado es <code>&lt;th&gt;</code>.</p>
+    <h3>¿Cuál es la etiqueta utilizada para crear una celda de datos en una tabla?</h3>
+    <p>La etiqueta utilizada para crear una celda de datos es <code>&lt;td&gt;</code>.</p>
+    <h3>¿Qué atributo se utiliza para especificar cuántas columnas debe abarcar una celda?</h3>
+    <p>Se usa el atributo <code>colspan</code> para expandir la celda horizontalmente.</p>
+    <h3>¿Qué atributo se utiliza para especificar cuántas filas debe abarcar una celda?</h3>
+    <p>El atributo <code>rowspan</code> modifica el espacio que abarca en filas una celda.</p>
+    <h3>Si necesitamos crear una tabla con 10 filas ¿qué etiqueta y cuántas veces se debe utilizar para definir las
+        filas?</h3>
+    <p>Se utiliza la etiqueta <code>&lt;table&gt;</code> seguido de 10 <code>&lt;tr&gt;</code>, donde el primero tiene
+        dentro la etiqueta <code>&lt;th&gt;</code> y los otros nueve tienen <code>&lt;td&gt;</code>.</p>
+    <h2>Práctica</h2>
+    <h3>Realizar los siguientes ejemplos en tablas, teniendo en cuenta:
+        todas las tablas están en la misma página
+        cada tabla debe estar en una sección especial con un identificador
+        realizar un header a la página con título “TABLAS”</h3>
+
+    <hr><h1>Tablas</h1>
+
+    <h3>👉 TABLA 1
+
+        Realizar una tabla que contenga 5 flores y por cada uno de ellos se debe visualizar: nombre, locación, tipo,
+        imagen.</h3>
+    <table>
+        <tr>
+            <th colspan="4">Flores</th>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Localidad</th>
+            <th>Tipo</th>
+            <th>Imagen</th>
+        <tr>
+        <tr>
+            <td>Ceibo</td>
+            <td>Argentina, Uruguay Brasil y Paraguay</td>
+            <td>Erythrina crista-galli</td>
+            <td><img src="ceibo.jpg" width="100"></td>
+        </tr>
+        <tr>
+            <td>Flor de Loto</td>
+            <td>Asia y Europa</td>
+            <td>Nelumbo nucifera</td>
+            <td><img src="Flor de loto.jpg" width="100"></td>
+        </tr>
+        <tr>
+            <td>Margarita</td>
+            <td>Europa, Africa y Asia.</td>
+            <td>Bellis perennis</td>
+            <td><img src="Margaritas.jpeg" width="100"></td>
+        </tr>
+        <tr>
+            <td>Orquidea</td>
+            <td>Global</td>
+            <td>Orchidaceae</td>
+            <td><img src="Orquídea.jpg" width="100"></td>
+        </tr>
+        <tr>
+            <td>Dalia</td>
+            <td>Europa y America</td>
+            <td>Dahlia</td>
+            <td><img src="Dalia.jpeg" width="100"></td>
+        </tr>
+    </table><hr>
+    <h3>👉 TABLA 2
+
+        Realizar una tabla de seis pilotos según la estructura definida en:
+        https://www.espn.com.ar/deporte-motor/f1/posiciones</h3>
+    <table>
+        <tr>
+            <th colspan="18">Posiciones de la Fórmula 1 2024</th>
+        </tr>
+        <tr>
+            <th>Posicion</th>
+            <th></th>
+            <th>Piloto</th>
+            <th><u>PTS</u></th>
+            <th><u>BRN</u></th>
+            <th><u>SAU</u></th>
+            <th><u>AUS</u></th>
+            <th><u>JPN</u></th>
+            <th><u>CHN</u></th>
+            <th><u>MIA</u></th>
+            <th><u>ITA</u></th>
+            <th><u>MON</u></th>
+            <th><u>CAN</u></th>
+            <th><u>ESP</u></th>
+            <th><u>AUT</u></th>
+            <th><u>GBR</u></th>
+            <th><u>HUN</u></th>
+            <th><u>BEL</u></th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td><img src="Paises bajos.png" width="20"></td>
+            <td>Max Verstappen</td>
+            <td>277</td>
+            <td>26</td>
+            <td>25</td>
+            <td>-</td>
+            <td>26</td>
+            <td>33</td>
+            <td>26</td>
+            <td>25</td>
+            <td>8</td>
+            <td>25</td>
+            <td>25</td>
+            <td>18</td>
+            <td>18</td>
+            <td>10</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td><img src="UK.png" width="20"></td>
+            <td>Lando Norris</td>
+            <td>199</td>
+            <td>8</td>
+            <td>4</td>
+            <td>15</td>
+            <td>10</td>
+            <td>21</td>
+            <td>25</td>
+            <td>18</td>
+            <td>12</td>
+            <td> 18</td>
+            <td>19</td>
+            <td>6</td>
+            <td>15</td>
+            <td>18</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td><img src="Monaco.png" width="20"></td>
+            <td>Charles Leclerc</td>
+            <td>177</td>
+            <td>12</td>
+            <td>16</td>
+            <td>19</td>
+            <td>12</td>
+            <td>17</td>
+            <td>22</td>
+            <td>15</td>
+            <td>25</td>
+            <td>-</td>
+            <td>10</td>
+            <td>2</td>
+            <td>-</td>
+            <td>12</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td><img src="Australia.png" width="20"></td>
+            <td>Oscar Piastri</td>
+            <td>167</td>
+            <td>4</td>
+            <td>12</td>
+            <td>12</td>
+            <td>4</td>
+            <td>6</td>
+            <td>3</td>
+            <td>12</td>
+            <td>18</td>
+            <td>10</td>
+            <td>6</td>
+            <td>25</td>
+            <td>12</td>
+            <td>25</td>
+            <td>18</td>
+            </td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td><img src="España.png" width="20"></td>
+            <td>Carlos Sainz</td>
+            <td>162</td>
+            <td>15</td>
+            <td> </td>
+            <td>25</td>
+            <td>15</td>
+            <td>14</td>
+            <td>14</td>
+            <td>10</td>
+            <td>15</td>
+            <td>-</td>
+            <td>8</td>
+            <td>19</td>
+            <td>11</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td><img src="UK.png" width="20"></td>
+            <td>Lewis Hamilton</td>
+            <td>150</td>
+            <td>6</td>
+            <td>2</td>
+            <td>-</td>
+            <td>2</td>
+            <td>9</td>
+            <td>8</td>
+            <td>8</td>
+            <td>7</td>
+            <td>13</td>
+            <td>15</td>
+            <td>15</td>
+            <td>25</td>
+            <td>15</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
